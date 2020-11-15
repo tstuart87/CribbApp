@@ -37,7 +37,7 @@ namespace CribbApp.Data
 
         public DbSet<House> Houses { get; set; }
 
-
+        public DbSet<Pet> Pets { get; set; }
 
         //*****
 

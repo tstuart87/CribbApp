@@ -32,8 +32,13 @@ C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.Owin.Security.dll
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Owin.dll
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\System.Web.Http.Owin.dll
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\CribbApp.Services.dll
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\CribbApp.Models.dll
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.Owin.Cors.dll
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\System.Web.Http.Cors.dll
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\WebGrease.dll
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\System.Web.Cors.dll
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Antlr3.Runtime.dll
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\CribbApp.WebAPI.pdb
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\CribbApp.WebAPI.dll.config
@@ -61,7 +66,13 @@ C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.Owin.Security.xml
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\System.Web.Http.Owin.xml
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\CribbApp.Services.pdb
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\CribbApp.Services.dll.config
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\CribbApp.Models.pdb
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\CribbApp.Models.dll.config
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Microsoft.Owin.Cors.xml
+C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\System.Web.Http.Cors.xml
 C:\Projects\CribbApp\CribbApp.Tests\bin\Debug\Antlr3.Runtime.pdb
 C:\Projects\CribbApp\CribbApp.Tests\obj\Debug\CribbApp.Tests.csproj.CopyComplete
 C:\Projects\CribbApp\CribbApp.Tests\obj\Debug\CribbApp.Tests.dll

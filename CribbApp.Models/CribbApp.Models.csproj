@@ -58,6 +58,10 @@
     <Compile Include="HouseModels\HouseDetail.cs" />
     <Compile Include="HouseModels\HouseEdit.cs" />
     <Compile Include="HouseModels\HouseListItem.cs" />
+    <Compile Include="PetModels\PetCreate.cs" />
+    <Compile Include="PetModels\PetDetail.cs" />
+    <Compile Include="PetModels\PetEdit.cs" />
+    <Compile Include="PetModels\PetListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,5 +74,6 @@
       <Name>CribbApp.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

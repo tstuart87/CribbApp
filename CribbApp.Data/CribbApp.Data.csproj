@@ -94,7 +94,12 @@
     <Compile Include="Migrations\202011150041247_first.Designer.cs">
       <DependentUpon>202011150041247_first.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011151825445_pets.cs" />
+    <Compile Include="Migrations\202011151825445_pets.Designer.cs">
+      <DependentUpon>202011151825445_pets.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Pet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011150041247_first.resx">
       <DependentUpon>202011150041247_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011151825445_pets.resx">
+      <DependentUpon>202011151825445_pets.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
