@@ -17,6 +17,11 @@ namespace CribbApp.Services
             _userId = userId;
         }
 
+        public HouseService()
+        {
+            //empty Constructor
+        }
+
         public bool CreateHouse(HouseCreate model)
         {
             var entity =
@@ -84,6 +89,16 @@ namespace CribbApp.Services
                     ZipCode = entity.ZipCode,
                     Country = entity.Country
                 };
+            }
+        }
+
+        public int GetHouseIdByOwnerId(Guid ownerId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx.Houses.Single(h => h.OwnerId == ownerId);
+
+                return entity.HouseId;
             }
         }
 

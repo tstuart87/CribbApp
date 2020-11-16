@@ -11,9 +11,10 @@ using System.Web.Http;
 namespace CribbApp.WebAPI.Controllers
 {
     [Authorize]
+    [RoutePrefix("api/House")]
     public class HouseController : ApiController
     {
-        public IHttpActionResult Get()
+        public IHttpActionResult GetAll()
         {
             HouseService houseService = CreateHouseService();
             var houses = houseService.GetHouses();
@@ -30,12 +31,16 @@ namespace CribbApp.WebAPI.Controllers
         public IHttpActionResult Post(HouseCreate house)
         {
             if (!ModelState.IsValid)
+            {
                 return BadRequest(ModelState);
+            }
 
             var service = CreateHouseService();
 
             if (!service.CreateHouse(house))
+            {
                 return InternalServerError();
+            }
 
             return Ok();
         }
@@ -75,6 +80,5 @@ namespace CribbApp.WebAPI.Controllers
             var houseService = new HouseService(userId);
             return houseService;
         }
-
     }
 }

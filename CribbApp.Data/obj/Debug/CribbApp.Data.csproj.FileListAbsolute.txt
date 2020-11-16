@@ -36,3 +36,4 @@ C:\Projects\CribbApp\CribbApp.Data\obj\Debug\CribbApp.Data.csproj.CopyComplete
 C:\Projects\CribbApp\CribbApp.Data\obj\Debug\CribbApp.Data.dll
 C:\Projects\CribbApp\CribbApp.Data\obj\Debug\CribbApp.Data.pdb
 C:\Projects\CribbApp\CribbApp.Data\obj\Debug\CribbApp.Data.Migrations.pets.resources
+C:\Projects\CribbApp\CribbApp.Data\obj\Debug\CribbApp.Data.csprojAssemblyReference.cache

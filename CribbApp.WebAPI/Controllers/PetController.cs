@@ -12,6 +12,7 @@ using System.Web.Http;
 namespace CribbApp.WebAPI.Controllers
 {
     [Authorize]
+    [RoutePrefix("api/Pet")]
     public class PetController : ApiController
     {
         public IHttpActionResult Get()
@@ -31,12 +32,16 @@ namespace CribbApp.WebAPI.Controllers
         public IHttpActionResult Post(PetCreate pet)
         {
             if (!ModelState.IsValid)
+            {
                 return BadRequest(ModelState);
+            }
 
-            var petService = CreatePetService();
+            var service = CreatePetService();
 
-            if (!petService.CreatePet(pet))
+            if (!service.CreatePet(pet))
+            {
                 return InternalServerError();
+            }
 
             return Ok();
         }
@@ -70,7 +75,7 @@ namespace CribbApp.WebAPI.Controllers
             return Ok();
         }
 
-        public PetService CreatePetService()
+        private PetService CreatePetService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var petService = new PetService(userId);

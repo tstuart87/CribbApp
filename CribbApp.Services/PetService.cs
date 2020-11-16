@@ -16,7 +16,9 @@ namespace CribbApp.Services
         public PetService(Guid userId)
         {
             _userId = userId;
-            //_houseId = 
+
+            HouseService houseService = new HouseService();
+            _houseId = houseService.GetHouseIdByOwnerId(_userId);
         }
 
         public bool CreatePet(PetCreate model)
@@ -50,7 +52,12 @@ namespace CribbApp.Services
                             p =>
                                 new PetListItem
                                 {
-                                    // *****
+                                    PetId = p.PetId,
+                                    OwnerId = p.OwnerId,
+                                    HouseId = p.HouseId,
+                                    Name = p.Name,
+                                    PetAge = p.PetAge,
+                                    Personality = p.Personality
                                 }
 
                         );
@@ -66,7 +73,12 @@ namespace CribbApp.Services
                     ctx.Pets.Single(p => p.OwnerId == _userId && p.PetId == petId);
                 return new PetDetail
                 {
-                    // *****
+                    PetId = entity.PetId,
+                    OwnerId = entity.OwnerId,
+                    HouseId = entity.HouseId,
+                    Name = entity.Name,
+                    PetAge = entity.PetAge,
+                    Personality = entity.Personality
                 };
             }
         }
@@ -77,7 +89,12 @@ namespace CribbApp.Services
             {
                 var entity = ctx.Pets.Single(p => p.OwnerId == _userId && p.PetId == model.PetId);
 
-                // *****
+                entity.PetId = model.PetId;
+                entity.OwnerId = model.OwnerId;
+                entity.HouseId = model.HouseId;
+                entity.Name = model.Name;
+                entity.PetAge = model.PetAge;
+                entity.Personality = model.Personality;
 
                 return ctx.SaveChanges() == 1;
             }
