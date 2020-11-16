@@ -39,6 +39,8 @@ namespace CribbApp.Data
 
         public DbSet<Pet> Pets { get; set; }
 
+        public DbSet<Neighborhood> Neighborhoods { get; set; }
+
         //*****
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

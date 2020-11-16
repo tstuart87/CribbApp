@@ -58,6 +58,10 @@
     <Compile Include="HouseModels\HouseDetail.cs" />
     <Compile Include="HouseModels\HouseEdit.cs" />
     <Compile Include="HouseModels\HouseListItem.cs" />
+    <Compile Include="NeighborhoodModels\NeighborhoodCreate.cs" />
+    <Compile Include="NeighborhoodModels\NeighborhoodDetail.cs" />
+    <Compile Include="NeighborhoodModels\NeighborhoodEdit.cs" />
+    <Compile Include="NeighborhoodModels\NeighborhoodListItem.cs" />
     <Compile Include="PetModels\PetCreate.cs" />
     <Compile Include="PetModels\PetDetail.cs" />
     <Compile Include="PetModels\PetEdit.cs" />
