@@ -11,6 +11,5 @@ namespace CribbApp.Models.NeighborhoodModels
         public int NeighborhoodId { get; set; }
         public Guid OwnerId  { get; set; }
         public string Name  { get; set; }
-        public List<int> Houses { get; set; }
     }
 }

@@ -1,4 +1,3 @@
-C:\Projects\CribbApp\CribbApp.Services\obj\Debug\CribbApp.Services.csproj.CoreCompileInputs.cache
 C:\Projects\CribbApp\CribbApp.Services\bin\Debug\CribbApp.Services.dll.config
 C:\Projects\CribbApp\CribbApp.Services\bin\Debug\CribbApp.Services.dll
 C:\Projects\CribbApp\CribbApp.Services\bin\Debug\CribbApp.Services.pdb
@@ -17,6 +16,7 @@ C:\Projects\CribbApp\CribbApp.Services\bin\Debug\EntityFramework.SqlServer.xml
 C:\Projects\CribbApp\CribbApp.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Projects\CribbApp\CribbApp.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Projects\CribbApp\CribbApp.Services\obj\Debug\CribbApp.Services.csprojAssemblyReference.cache
+C:\Projects\CribbApp\CribbApp.Services\obj\Debug\CribbApp.Services.csproj.CoreCompileInputs.cache
 C:\Projects\CribbApp\CribbApp.Services\obj\Debug\CribbApp.Services.csproj.CopyComplete
 C:\Projects\CribbApp\CribbApp.Services\obj\Debug\CribbApp.Services.dll
 C:\Projects\CribbApp\CribbApp.Services\obj\Debug\CribbApp.Services.pdb

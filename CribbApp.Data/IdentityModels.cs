@@ -37,6 +37,10 @@ namespace CribbApp.Data
 
         public DbSet<House> Houses { get; set; }
 
+        public DbSet<Message> Messages { get; set; }
+
+        public DbSet<Reply> Replies { get; set; }
+
         public DbSet<Pet> Pets { get; set; }
 
         public DbSet<Neighborhood> Neighborhoods { get; set; }

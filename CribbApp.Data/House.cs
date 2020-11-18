@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,6 @@ namespace CribbApp.Data
     {
         [Key]
         public int HouseId { get; set; }
-        [Required]
-        public Guid OwnerId { get; set; }
 
         public string StreetAddressOne { get; set; }
         public string StreetAddressTwo { get; set; }
@@ -22,6 +21,10 @@ namespace CribbApp.Data
         public State State { get; set; }
         public string ZipCode { get; set; }
         public Country Country { get; set; }
+
+        [Required]
+        //[ForeignKey("ApplicationUser")]
+        public Guid OwnerId { get; set; }
     }
 
     public enum State

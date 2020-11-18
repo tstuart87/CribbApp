@@ -58,6 +58,14 @@
     <Compile Include="HouseModels\HouseDetail.cs" />
     <Compile Include="HouseModels\HouseEdit.cs" />
     <Compile Include="HouseModels\HouseListItem.cs" />
+    <Compile Include="MessageModels\MessageCreate.cs" />
+    <Compile Include="MessageModels\MessageDetail.cs" />
+    <Compile Include="MessageModels\MessageEdit.cs" />
+    <Compile Include="MessageModels\MessageListItem.cs" />
+    <Compile Include="MessageModels\ReplyCreate.cs" />
+    <Compile Include="MessageModels\ReplyDetail.cs" />
+    <Compile Include="MessageModels\ReplyEdit.cs" />
+    <Compile Include="MessageModels\ReplyListItem.cs" />
     <Compile Include="NeighborhoodModels\NeighborhoodCreate.cs" />
     <Compile Include="NeighborhoodModels\NeighborhoodDetail.cs" />
     <Compile Include="NeighborhoodModels\NeighborhoodEdit.cs" />

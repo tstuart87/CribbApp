@@ -53,7 +53,6 @@ namespace CribbApp.Services
                                     NeighborhoodId = n.NeighborhoodId,
                                     OwnerId = n.OwnerId,
                                     Name = n.Name,
-                                    Houses = n.Houses
                                 }
                         );
 
@@ -81,7 +80,7 @@ namespace CribbApp.Services
         {
             using(var ctx = new ApplicationDbContext())
             {
-                var entity = ctx.Neighborhoods.Single(n => n.NeighborhoodId == n.NeighborhoodId && n.OwnerId == _userId);
+                var entity = ctx.Neighborhoods.Single(n => n.NeighborhoodId == model.NeighborhoodId && n.OwnerId == _userId);
 
                 entity.NeighborhoodId = model.NeighborhoodId;
                 entity.Name = model.Name;
