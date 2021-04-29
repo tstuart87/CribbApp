@@ -13,7 +13,6 @@ namespace CribbApp.Data
     {
         [Key]
         public int HouseId { get; set; }
-
         public string StreetAddressOne { get; set; }
         public string StreetAddressTwo { get; set; }
         public string ApartmentNumber { get; set; }
@@ -21,10 +20,15 @@ namespace CribbApp.Data
         public State State { get; set; }
         public string ZipCode { get; set; }
         public Country Country { get; set; }
-
-        [Required]
-        //[ForeignKey("ApplicationUser")]
         public Guid OwnerId { get; set; }
+
+        public virtual ICollection<Pet> Pets { get; set; }
+
+        public virtual ICollection<Neighborhood> Neighborhoods { get; set; }
+
+        public virtual ICollection<Rule> Rules { get; set; }
+
+        public virtual ICollection<ApplicationUser> Users { get; set; }
     }
 
     public enum State

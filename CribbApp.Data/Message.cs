@@ -17,10 +17,8 @@ namespace CribbApp.Data
         public string MessageContent { get; set; }
         public DateTimeOffset DateCreated { get; set; }
 
-        [Required]
-        //[ForeignKey("House")]
         public int ReceiverHouseId { get; set; }
 
-        public virtual List<MessageReply> Replies { get; set; }
+        public virtual ICollection<Reply> Replies { get; set; }
     }
 }

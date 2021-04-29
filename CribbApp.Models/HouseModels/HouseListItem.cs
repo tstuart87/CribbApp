@@ -22,5 +22,9 @@ namespace CribbApp.Models.HouseModels
         public State State { get; set; }
         public string ZipCode { get; set; }
         public Country Country { get; set; }
+        public virtual ICollection<Pet> Pets { get; set; }
+        public virtual ICollection<Neighborhood> Neighborhoods { get; set; }
+        public virtual ICollection<Rule> Rules { get; set; }
+        public virtual ICollection<ApplicationUser> Users { get; set; }
     }
 }

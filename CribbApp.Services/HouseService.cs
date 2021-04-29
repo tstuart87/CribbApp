@@ -64,7 +64,11 @@ namespace CribbApp.Services
                                     City = e.City,
                                     State = e.State,
                                     ZipCode = e.ZipCode,
-                                    Country = e.Country
+                                    Country = e.Country,
+                                    Pets = e.Pets,
+                                    Neighborhoods = e.Neighborhoods,
+                                    Rules = e.Rules,
+                                    Users = e.Users
                                 }
                         );
 
@@ -87,7 +91,11 @@ namespace CribbApp.Services
                     City = entity.City,
                     State = entity.State,
                     ZipCode = entity.ZipCode,
-                    Country = entity.Country
+                    Country = entity.Country,
+                    Pets = entity.Pets,
+                    Neighborhoods = entity.Neighborhoods,
+                    Rules = entity.Rules,
+                    Users = entity.Users
                 };
             }
         }

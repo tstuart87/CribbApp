@@ -16,6 +16,8 @@ namespace CribbApp.Data
         public string Name { get; set; }
         public PetAge? PetAge { get; set; }
         public PersonalityType? Personality { get; set; }
+
+        public virtual ICollection<Neighborhood> Neighborhoods { get; set; }
     }
 
     public class Dog : Pet

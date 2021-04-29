@@ -84,7 +84,7 @@ namespace CribbApp.Services
 
                 entity.NeighborhoodId = model.NeighborhoodId;
                 entity.Name = model.Name;
-                entity.Houses = model.Houses;
+                entity.Houses = (ICollection<House>)model.Houses;
 
                 return ctx.SaveChanges() == 1;
             }

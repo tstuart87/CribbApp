@@ -13,6 +13,9 @@ namespace CribbApp.Data
         public int NeighborhoodId { get; set; }
         public Guid OwnerId { get; set; } // Neighborhood Administrator/Creator
         public string Name { get; set; }
-        public List<int> Houses { get; set; } // List of HouseId's
+
+        public virtual ICollection<House> Houses { get; set; }
+
+        public virtual ICollection<Pet> Pets { get; set; }
     }
 }

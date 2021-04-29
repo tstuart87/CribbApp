@@ -71,8 +71,9 @@ namespace CribbApp.Services
                                     ReceiverHouseId = e.ReceiverHouseId,
                                     MessageContent = e.MessageContent,
                                     DateCreated = e.DateCreated,
-                                    //Replies = e.Replies,
+                                    Replies = e.Replies,
                                     //Likes = e.Likes,
+                                                        //Likes doesn't exist yet, but it will. Leave this here.
                                 }
                         );
 
@@ -94,7 +95,7 @@ namespace CribbApp.Services
                     ReceiverHouseId = entity.ReceiverHouseId,
                     MessageContent = entity.MessageContent,
                     DateCreated = entity.DateCreated,
-                    //Replies = entity.Replies,
+                    Replies = entity.Replies,
                     //Likes = entity.Likes,
                 };
             }
